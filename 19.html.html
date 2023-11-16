@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Veterinary Care</title>
+    <style>
+       body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+section {
+    margin: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Customize further as needed */
+
+    </style>
+</head>
+<body>
+
+<!-- Common Header -->
+<header>
+    <h1>Online Veterinary Care</h1>
+</header>
+
+<!-- User Section -->
+<section id="user-section">
+    <h2>User</h2>
+    <form id="user-registration-form">
+        <label for="user-name">Name:</label>
+        <input type="text" id="user-name" name="user-name">
+        <!-- Add other registration fields -->
+        <button type="button" onclick="userRegister()">Register</button>
+    </form>
+
+    <form id="user-login-form">
+        <label for="user-login">Login:</label>
+        <input type="text" id="user-login" name="user-login">
+        <label for="user-password">Password:</label>
+        <input type="password" id="user-password" name="user-password">
+        <button type="button" onclick="userLogin()">Login</button>
+    </form>
+
+    <!-- Add other User functionalities -->
+</section>
+
+<!-- Doctor Section -->
+<section id="doctor-section">
+    <h2>Doctor</h2>
+    <form id="doctor-registration-form">
+        <label for="doctor-name">Name:</label>
+        <input type="text" id="doctor-name" name="doctor-name">
+        <!-- Add other registration fields -->
+        <button type="button" onclick="doctorRegister()">Register</button>
+    </form>
+
+    <form id="doctor-login-form">
+        <label for="doctor-login">Login:</label>
+        <input type="text" id="doctor-login" name="doctor-login">
+        <label for="doctor-password">Password:</label>
+        <input type="password" id="doctor-password" name="doctor-password">
+        <button type="button" onclick="doctorLogin()">Login</button>
+    </form>
+
+    <!-- Add other Doctor functionalities -->
+</section>
+
+<!-- Common Footer -->
+<footer>
+    <p>&copy; 2023 Online Veterinary Care</p>
+</footer>
+
+<script>
+    function userRegister() {
+        // Implement user registration logic here
+        alert("User registration clicked");
+    }
+
+    function userLogin() {
+        // Implement user login logic here
+        alert("User login clicked");
+    }
+
+    function doctorRegister() {
+        // Implement doctor registration logic here
+        alert("Doctor registration clicked");
+    }
+
+    function doctorLogin() {
+        // Implement doctor login logic here
+        alert("Doctor login clicked");
+    }
+
+    // Add other JavaScript functions as needed
+</script>
+
+</body>
+</html>
+

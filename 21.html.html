@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Website</title>
+    <style>
+       body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+section {
+    margin: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Customize further as needed */
+
+    </style>
+</head>
+<body>
+
+<!-- Common Header -->
+<header>
+    <h1>Job Application Website</h1>
+</header>
+
+<!-- Admin Section -->
+<section id="admin-section">
+    <h2>Admin</h2>
+    <form id="admin-login-form">
+        <label for="admin-login">Login:</label>
+        <input type="text" id="admin-login" name="admin-login">
+        <label for="admin-password">Password:</label>
+        <input type="password" id="admin-password" name="admin-password">
+        <button type="button" onclick="adminLogin()">Login</button>
+    </form>
+
+    <form id="approve-director-form">
+        <label for="director-approval">Approve Director:</label>
+        <input type="text" id="director-approval" name="director-approval">
+        <button type="button" onclick="approveDirector()">Approve</button>
+    </form>
+
+    <!-- Add other Admin functionalities -->
+</section>
+
+<!-- Director Section -->
+<section id="director-section">
+    <h2>Director</h2>
+    <form id="director-login-form">
+        <label for="director-login">Login:</label>
+        <input type="text" id="director-login" name="director-login">
+        <label for="director-password">Password:</label>
+        <input type="password" id="director-password" name="director-password">
+        <button type="button" onclick="directorLogin()">Login</button>
+    </form>
+
+    <form id="post-vacancy-form">
+        <label for="vacancy-title">Vacancy Title:</label>
+        <input type="text" id="vacancy-title" name="vacancy-title">
+        <!-- Add other vacancy details -->
+        <button type="button" onclick="postVacancy()">Post Vacancy</button>
+    </form>
+
+    <!-- Add other Director functionalities -->
+</section>
+
+<!-- User Section -->
+<section id="user-section">
+    <h2>User</h2>
+    <form id="user-registration-form">
+        <label for="user-name">Name:</label>
+        <input type="text" id="user-name" name="user-name">
+        <!-- Add other registration fields -->
+        <button type="button" onclick="userRegister()">Register</button>
+    </form>
+
+    <form id="user-login-form">
+        <label for="user-login">Login:</label>
+        <input type="text" id="user-login" name="user-login">
+        <label for="user-password">Password:</label>
+        <input type="password" id="user-password" name="user-password">
+        <button type="button" onclick="userLogin()">Login</button>
+    </form>
+
+    <form id="search-vacancy-form">
+        <label for="vacancy-search">Search Vacancy:</label>
+        <input type="text" id="vacancy-search" name="vacancy-search">
+        <!-- Add other search fields -->
+        <button type="button" onclick="searchVacancy()">Search Vacancies</button>
+    </form>
+
+    <form id="apply-vacancy-form">
+        <label for="applied-vacancy">Apply for Vacancy:</label>
+        <input type="text" id="applied-vacancy" name="applied-vacancy">
+        <button type="button" onclick="applyVacancy()">Apply</button>
+    </form>
+
+    <!-- Add other User functionalities -->
+</section>
+
+<!-- Common Footer -->
+<footer>
+    <p>&copy; 2023 Job Application Website</p>
+</footer>
+
+
+<script>
+    function adminLogin() {
+        var adminLoginValue = document.getElementById("admin-login").value;
+        var adminPasswordValue = document.getElementById("admin-password").value;
+
+        // Implement admin login logic here
+        alert("Admin login clicked with username: " + adminLoginValue + " and password: " + adminPasswordValue);
+    }
+
+    function approveDirector() {
+        var directorApprovalValue = document.getElementById("director-approval").value;
+
+        // Implement director approval logic here
+        alert("Director approval clicked for: " + directorApprovalValue);
+    }
+
+    function directorLogin() {
+        var directorLoginValue = document.getElementById("director-login").value;
+        var directorPasswordValue = document.getElementById("director-password").value;
+
+        // Implement director login logic here
+        alert("Director login clicked with username: " + directorLoginValue + " and password: " + directorPasswordValue);
+    }
+
+    function postVacancy() {
+        var vacancyTitleValue = document.getElementById("vacancy-title").value;
+
+        // Implement vacancy posting logic here
+        alert("Post vacancy clicked with title: " + vacancyTitleValue);
+    }
+
+    function userRegister() {
+        var userNameValue = document.getElementById("user-name").value;
+
+        // Implement user registration logic here
+        alert("User registration clicked with name: " + userNameValue);
+    }
+
+    function userLogin() {
+        var userLoginValue = document.getElementById("user-login").value;
+        var userPasswordValue = document.getElementById("user-password").value;
+
+        // Implement user login logic here
+        alert("User login clicked with username: " + userLoginValue + " and password: " + userPasswordValue);
+    }
+
+    function searchVacancy() {
+        var vacancySearchValue = document.getElementById("vacancy-search").value;
+
+        // Implement vacancy search logic here
+        alert("Search vacancy clicked with search term: " + vacancySearchValue);
+    }
+
+    function applyVacancy() {
+        var appliedVacancyValue = document.getElementById("applied-vacancy").value;
+
+        // Implement vacancy application logic here
+        alert("Apply for vacancy clicked for: " + appliedVacancyValue);
+    }
+
+
+</script>
+
+</body>
+</html>
+
+

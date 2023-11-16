@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Vehicle Rental System</title>
+    <style>
+      body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+section {
+    margin: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Customize further as needed */
+
+    </style>
+</head>
+<body>
+
+<!-- Common Header -->
+<header>
+    <h1>Online Vehicle Rental System</h1>
+</header>
+
+<!-- Admin Section -->
+<section id="admin-section">
+    <h2>Admin</h2>
+    <form id="admin-login-form">
+        <label for="admin-login">Login:</label>
+        <input type="text" id="admin-login" name="admin-login">
+        <label for="admin-password">Password:</label>
+        <input type="password" id="admin-password" name="admin-password">
+        <button type="button" onclick="adminLogin()">Login</button>
+    </form>
+
+    <form id="add-vehicle-form">
+        <label for="vehicle-name">Vehicle Name:</label>
+        <input type="text" id="vehicle-name" name="vehicle-name">
+        <!-- Add other vehicle details -->
+        <button type="button" onclick="addVehicle()">Add Vehicle</button>
+    </form>
+
+    <!-- Add other Admin functionalities -->
+</section>
+
+<!-- User Section -->
+<section id="user-section">
+    <h2>User</h2>
+    <form id="user-registration-form">
+        <label for="user-name">Name:</label>
+        <input type="text" id="user-name" name="user-name">
+        <!-- Add other registration fields -->
+        <button type="button" onclick="userRegister()">Register</button>
+    </form>
+
+    <form id="user-login-form">
+        <label for="user-login">Login:</label>
+        <input type="text" id="user-login" name="user-login">
+        <label for="user-password">Password:</label>
+        <input type="password" id="user-password" name="user-password">
+        <button type="button" onclick="userLogin()">Login</button>
+    </form>
+
+    <form id="search-vehicle-form">
+        <label for="search-location">Search Location:</label>
+        <input type="text" id="search-location" name="search-location">
+        <!-- Add other search fields -->
+        <button type="button" onclick="searchVehicles()">Search Vehicles</button>
+    </form>
+
+    <form id="booking-form">
+        <label for="vehicle-type">Vehicle Type:</label>
+        <input type="text" id="vehicle-type" name="vehicle-type">
+        <!-- Add other booking fields -->
+        <button type="button" onclick="makeBooking()">Make Booking</button>
+    </form>
+
+    <!-- Add other User functionalities -->
+</section>
+
+<!-- Common Footer -->
+<footer>
+    <p>&copy; 2023 Online Vehicle Rental System</p>
+</footer>
+
+<!-- ... (your HTML code) ... -->
+
+<!-- Add your JavaScript code here -->
+<script>
+    function userRegister() {
+        // Implement user registration logic here
+        alert("User registration clicked");
+    }
+
+    function userLogin() {
+        // Implement user login logic here
+        alert("User login clicked");
+    }
+
+    function searchVehicles() {
+        // Implement vehicle search logic here
+        alert("Search vehicles clicked");
+    }
+
+    function makeBooking() {
+        // Implement vehicle booking logic here
+        alert("Make booking clicked");
+    }
+
+    function adminLogin() {
+        // Implement admin login logic here
+        alert("Admin login clicked");
+    }
+
+    // Add other JavaScript functions as needed
+</script>
+
+</body>
+</html>
+
+
+</body>
+</html>
